@@ -1,3 +1,12 @@
+-- DETECTION: Password Spraying
+-- ATT&CK: Credential Access
+-- SIGNAL:
+--   Multiple failed logins against many users from one IP
+-- TUNING:
+--   Exclude VPN IPs, IdP service accounts
+-- RESPONSE:
+--   Block IP, force password resets, check successful logins
+
 -- Goal: Detect password spraying against multiple users from a single IP
 -- Tuning knobs:
 --   - window size (e.g., 15m / 30m)
